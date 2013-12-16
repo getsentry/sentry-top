@@ -33,3 +33,11 @@ Configure ``SENTRY_TOP`` in your ``sentry.conf.py``:
         },
         'total_minutes': 15,
     }
+
+
+Usage
+-----
+
+::
+
+    sentry top
