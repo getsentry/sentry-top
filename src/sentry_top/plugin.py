@@ -80,7 +80,7 @@ class TopPlugin(Plugin):
         project_map = dict(
             (p.id, p) for p in Project.objects.filter(id__in=[
                 p_id for p_id, _ in sorted_results
-            ])
+            ]).select_related('team')
         )
 
         return [
