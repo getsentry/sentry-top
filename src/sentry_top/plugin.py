@@ -47,6 +47,9 @@ class TopPlugin(Plugin):
     conf_title = title
     conf_key = 'top'
 
+    def can_enable_for_projects(self):
+        return False
+
     def add_event(self, project, client=redis):
         minute = int(time() / 60)
         keys = [
