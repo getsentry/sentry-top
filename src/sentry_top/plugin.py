@@ -92,8 +92,6 @@ class TopPlugin(Plugin):
             if p_id in project_map
         ]
 
-        return sorted_results[:num]
-
     def is_rate_limited(self, project):
         # TODO(dcramer): we need a way to hook into Sentry at event input
         # that guarantees this stat
